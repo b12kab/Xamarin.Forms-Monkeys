@@ -5,12 +5,15 @@
         x:Class="Monkeys2.Views.MonkeysPage"
         xmlns:design="clr-namespace:Monkeys2.Helper;assembly=Monkeys2"
         xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+        xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+        ios:Page.UseSafeArea="true"
 		BindingContext="{x:Static design:ViewModelLocator.MonkeysViewModel}"
         Title="Traditional Monkey">
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="How many monkeys?" x:Name="ButtonHowMany"/> 
+<!--            <Button Text="How many monkeys?" x:Name="ButtonHowMany"/> -->
 			<Label Margin="10,0"
+                   FontSize="Large"
 				    Text="{Binding MonkeyCount, StringFormat='{0} Monkeys'}"/>
             <ListView ItemsSource="{Binding MonkeysGrouped}"
 					ItemTapped="Handle_ItemTapped"

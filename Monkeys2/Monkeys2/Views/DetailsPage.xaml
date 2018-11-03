@@ -5,6 +5,8 @@
 		x:Class="Monkeys2.Views.DetailsPage"
 		xmlns:design="clr-namespace:Monkeys2.Helper;assembly=Monkeys2"
         xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+        xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+        ios:Page.UseSafeArea="true"
         BindingContext="{x:Static design:ViewModelLocator.DetailsViewModel}"
         Title="{Binding Monkey.Name}">
     <ContentPage.Content>

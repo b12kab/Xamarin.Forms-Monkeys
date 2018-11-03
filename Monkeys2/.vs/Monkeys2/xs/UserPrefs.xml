@@ -1,7 +1,11 @@
-﻿<Properties StartupConfiguration="{C1B51364-DE9D-4DF1-9531-181F21EE2813}|Default">
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties StartupConfiguration="{752B8B6E-1D68-4322-B28E-DB808566C9FB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Monkeys2/Views/MonkeysPage.xaml.cs">
+    <Files>
+      <File FileName="Monkeys2/Views/MonkeysPage.xaml.cs" Line="23" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Monkeys2.iOS automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.Monkeys2.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D1AEA633-1FB4-42A3-8A49-16365C2E8F20" automaticSigning="False" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

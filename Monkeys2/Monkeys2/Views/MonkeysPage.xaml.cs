@@ -22,6 +22,9 @@ namespace Monkeys2.Views
             var monkey = ((ListView)sender).SelectedItem as Monkey;
             if (monkey == null)
                 return;
+
+            // show detail
+            Navigation.PushAsync(new DetailsPage(monkey));
         }
     }
 }
