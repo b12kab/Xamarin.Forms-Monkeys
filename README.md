@@ -1,17 +1,21 @@
 Xamarin.Forms-Monkeys
 =====================
+This is a fork of the original Monkeys project at [https://github.com/jamesmontemagno/Xamarin.Forms-Monkeys](https://github.com/jamesmontemagno/Xamarin.Forms-Monkeys)
 
-Simple list of monkeys (master/detail) in a xamarin.forms application
+## Original project problems
 
-You can see the [full blog post on the Xamarin blog](http://blog.xamarin.com/meet-xamarin.forms-3-native-uis-1-shared-code-base/) for more details.
+It's got that great XamlCTask error that happens with older projects compiled with Visual Studio Mac, making it useless for me as it was.
 
+I don't need the CarouselView example or the Archive, so I removed those. I've upgraded it to use Xamarin Forms 3 as well.
 
-## Code behind or xaml listview databinding
+### Fix
 
-![](http://blog.xamarin.com/wp-content/uploads/2014/06/ListView-With-Monkeys.png)
+In order to actually get this to work with the Xaml compiler, I removed the project and started a new one and copied the files from the old one into the new one.
 
-## Now with Images!
-Read my [full blog post on adding Images](http://motzcod.es/post/88692272607/extending-xamarin-forms-monkeys-app-with-xaml-and) with custom renderers as well!
+This was created using VS 2017 Mac version 7.6.8.
 
-![](http://media.tumblr.com/493c31c8cf8c5488a5ce55d260d20ade/tumblr_inline_n739ymPxYu1qzumo9.png)
- 
+### Other project problems
+
+The problem with the original (and most other examples) using [IsGroupingEnabled](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.ListView.IsGroupingEnabled?view=xamarin-forms) and [GroupDisplayBinding](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.ListView.GroupDisplayBinding?view=xamarin-forms) that they don't use a MVVC example, which I (and I think most others) need. So I also changed it over to that.
+
+There isn't much out there on this that isn't done after 2014 that is self explanitory, hopefully it helps out.
