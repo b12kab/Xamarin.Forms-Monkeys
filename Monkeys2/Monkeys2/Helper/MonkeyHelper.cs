@@ -13,19 +13,15 @@ namespace Monkeys2.Helpers
 
         public static Monkey GetRandomMonkey()
         {
-            //var output = Newtonsoft.Json.JsonConvert.SerializeObject(Monkeys);
             return Monkeys[random.Next(0, Monkeys.Count)];
         }
 
-
-        public static ObservableCollection<Grouping<string, Monkey>> MonkeysGrouped { get; set; }
-
-        public static ObservableCollection<Monkey> Monkeys { get; set; }
+        public static List<Monkey> Monkeys { get; set; }
 
         static MonkeyHelper()
         {
             random = new Random();
-            Monkeys = new ObservableCollection<Monkey>();
+            Monkeys = new List<Monkey>();
             Monkeys.Add(new Monkey
             {
                 Name = "Baboon",
@@ -98,14 +94,6 @@ namespace Monkeys2.Helpers
                 Details = "The proboscis monkey or long-nosed monkey, known as the bekantan in Malay, is a reddish-brown arboreal Old World monkey that is endemic to the south-east Asian island of Borneo.",
                 Image = "http://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Proboscis_Monkey_in_Borneo.jpg/250px-Proboscis_Monkey_in_Borneo.jpg"
             });
-
-
-            var sorted = from monkey in Monkeys
-                         orderby monkey.Name
-                         group monkey by monkey.NameSort into monkeyGroup
-                         select new Grouping<string, Monkey>(monkeyGroup.Key, monkeyGroup);
-
-            MonkeysGrouped = new ObservableCollection<Grouping<string, Monkey>>(sorted);
 
         }
     }

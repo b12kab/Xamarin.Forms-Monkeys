@@ -18,4 +18,4 @@ This was created using VS 2017 Mac version 7.6.8.
 
 The problem with the original (and most other examples) using [IsGroupingEnabled](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.ListView.IsGroupingEnabled?view=xamarin-forms) and [GroupDisplayBinding](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.ListView.GroupDisplayBinding?view=xamarin-forms) that they don't use a MVVC example, which I (and I think most others) need. So I also changed it over to that.
 
-There isn't much out there on this that isn't done after 2014 that is self explanitory, hopefully it helps out.
+There isn't much out there on XAML grouping that isn't done after 2015 that is self explanitory. Hopefully this will help you out.

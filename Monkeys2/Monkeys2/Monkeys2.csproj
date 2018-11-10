@@ -19,4 +19,8 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Views\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Helper\ViewModelLocator.cs" />
+    <Compile Remove="Helper\Grouping.cs" />
+  </ItemGroup>
 </Project>
