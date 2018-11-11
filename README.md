@@ -1,16 +1,18 @@
 Xamarin.Forms-Monkeys
 =====================
-This is a fork of the original Monkeys project at [https://github.com/jamesmontemagno/Xamarin.Forms-Monkeys](https://github.com/jamesmontemagno/Xamarin.Forms-Monkeys)
+This is a fork of the original Monkeys project at [https://github.com/jamesmontemagno/Xamarin.Forms-Monkeys](https://github.com/jamesmontemagno/Xamarin.Forms-Monkeys) as of 2018/11/03.
 
 ## Original project problems
 
-It's got that great XamlCTask error that happens with older projects compiled with Visual Studio Mac, making it useless for me as it was.
+This solution has the XamlCTask (compile) error that happens with older Windows VS projects compiled with Visual Studio Mac.
 
-I don't need the CarouselView example or the Archive, so I removed those. I've upgraded it to use Xamarin Forms 3 as well.
+### Changes
+
+I didn't need the CarouselView example or the Archive, so I removed those. I've upgraded this solution to use Xamarin Forms 3.
 
 ### Fix
 
-In order to actually get this to work with the Xaml compiler, I removed the project and started a new one and copied the files from the old one into the new one.
+In order to actually get this to work with the Xaml compiler, I started a new solution and copied the files from the existing solution into the new solution. Once finished copying files, the original solution was removed.
 
 This was created using VS 2017 Mac version 7.6.8.
 
